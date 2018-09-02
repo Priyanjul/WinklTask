@@ -1,6 +1,9 @@
 package task.sharedelement.winkl.winkltask.adapter;
 
+import static task.sharedelement.winkl.winkltask.adapter.ImageData.IMAGE_DESC;
 import static task.sharedelement.winkl.winkltask.adapter.ImageData.IMAGE_DRAWABLES;
+import static task.sharedelement.winkl.winkltask.adapter.ImageData.IMAGE_TITLES;
+
 import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
@@ -105,6 +109,7 @@ public class GridAdapter extends RecyclerView.Adapter<ImageViewHolder> {
             View.OnClickListener {
 
         private final ImageView image;
+        private final TextView textView, textdesc;
         private final RequestManager requestManager;
         private final ViewHolderListener viewHolderListener;
 
@@ -112,6 +117,8 @@ public class GridAdapter extends RecyclerView.Adapter<ImageViewHolder> {
                         ViewHolderListener viewHolderListener) {
             super(itemView);
             this.image = itemView.findViewById(R.id.card_image);
+            this.textView = itemView.findViewById(R.id.textView);
+            this.textdesc = itemView.findViewById(R.id.text_desc);
             this.requestManager = requestManager;
             this.viewHolderListener = viewHolderListener;
             itemView.findViewById(R.id.card_view).setOnClickListener(this);
@@ -121,6 +128,8 @@ public class GridAdapter extends RecyclerView.Adapter<ImageViewHolder> {
         void onBind() {
             int adapterPosition = getAdapterPosition();
             setImage(adapterPosition);
+            textView.setText(IMAGE_TITLES[adapterPosition]);
+            textdesc.setText(IMAGE_DESC[adapterPosition]);
             image.setTransitionName(String.valueOf(IMAGE_DRAWABLES[adapterPosition]));
         }
 

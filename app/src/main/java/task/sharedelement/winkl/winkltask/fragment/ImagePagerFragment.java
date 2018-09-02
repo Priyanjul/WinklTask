@@ -10,6 +10,7 @@ import android.transition.TransitionInflater;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Toast;
 
 import task.sharedelement.winkl.winkltask.MainActivity;
@@ -27,7 +28,7 @@ public class ImagePagerFragment extends Fragment {
   @Override
   public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
       @Nullable Bundle savedInstanceState) {
-    viewPager = (ViewPager) inflater.inflate(R.layout.fragment_pager, container, false);
+      viewPager = (ViewPager) inflater.inflate(R.layout.fragment_pager, container, false);
     viewPager.setAdapter(new ImagePagerAdapter(this));
     viewPager.setCurrentItem(MainActivity.currentPosition);
     viewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
@@ -50,7 +51,6 @@ public class ImagePagerFragment extends Fragment {
     Transition transition =
         TransitionInflater.from(getContext())
             .inflateTransition(R.transition.image_shared_element_transition);
-      Toast.makeText(getActivity().getApplicationContext(), "image_shared", Toast.LENGTH_SHORT).show();
 
       setSharedElementEnterTransition(transition);
 

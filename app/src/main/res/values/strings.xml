@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">WinklTask</string>
+    <string name="pic1_name">NICK BATEMAN</string>
+    <string name="pic2_name">MUSTAFA MERTKOC</string>
+    <string name="pic3_name">LEONARDO DICAPRIO</string>
+    <string name="pic4_name">CHRIS HEMSWORTH</string>
+    <string name="pic5_name">ZAYN MALIK</string>
+    <string name="pic6_name">KAYN WEST</string>
+    <string name="pic7_name">BRAID PITT</string>
+    <string name="pic8_name">CHRIS EVANS</string>
+    <string name="pic9_name">ROBERT DOWNING JR.</string>
+    <string name="pic10_name">BENEDICT CUMBERBATCH</string>
+    <string name="pic11_name">DANIEL RADCLIFF</string>
+    <string name="pic12_name">DAVE FRANCO</string>
+    <string name="pic13_name">SHINY AHUJA</string>
+    <string name="pic14_name">KIT HARRINGTON</string>
+
+    <string name="pic1_desc">Fitness trainer and Instagram Model</string>
+    <string name="pic2_desc">Turkish Actor and Instagram Model</string>
+    <string name="pic3_desc">Hollywood Actor</string>
+    <string name="pic4_desc">Famous as THOR from Avengers</string>
+    <string name="pic5_desc">Singer and Former One Direction Singer</string>
+    <string name="pic6_desc">Hollywood Celebrity</string>
+    <string name="pic7_desc">Hollywood Actor</string>
+    <string name="pic8_desc">CAPTAIN AMERICA from Avengers</string>
+    <string name="pic9_desc">IRON MAN from Avengers</string>
+    <string name="pic10_desc">DOCTOR STRANGE from Avengers</string>
+    <string name="pic11_desc">HARRY POTTER series lead</string>
+    <string name="pic12_desc">Hollywood Actor</string>
+    <string name="pic13_desc">Bollywood Actor</string>
+    <string name="pic14_desc">JON SNOW in GAME OF THRONES</string>
+
 </resources>

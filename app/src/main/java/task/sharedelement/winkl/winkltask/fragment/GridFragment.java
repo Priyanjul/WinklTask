@@ -73,7 +73,6 @@ public class GridFragment extends Fragment {
   private void prepareTransitions() {
     setExitTransition(TransitionInflater.from(getContext())
         .inflateTransition(R.transition.grid_exit_transition));
-      Toast.makeText(getActivity().getApplicationContext(), "gridexit", Toast.LENGTH_SHORT).show();
 
     setExitSharedElementCallback(
         new SharedElementCallback() {
